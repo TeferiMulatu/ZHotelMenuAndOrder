@@ -2,13 +2,16 @@
 
 @{
     ViewData["Title"] = "Index";
+    ViewBag["CategoryId"] = "1";
 }
 
 <h1>Categories</h1>
-
+@if (User.IsInRole("Admin"))
+                            {
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+                            }
 <table class="table">
     <thead>
         <tr>
