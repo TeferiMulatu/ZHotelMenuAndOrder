@@ -50,23 +50,22 @@
                             <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         @if(User.Identity.IsAuthenticated){
-                          <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Product" asp-action="GetAll">Products</a>
-                        </li>
+                            <li class="nav-item">
+                                
+                            </li>
+                            
+                          
                         }
                         @if (User.IsInRole("Admin"))
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-light" asp-area="" asp-controller="Inventory" asp-action="GetAll">Inventory</a>
-                            </li>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Products" asp-action="Index">Products</a>
+                        </li>
+                          
                         }
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                        <li>
-                             
-                        </li>
-                    </ul><a asp-controller="Carts" asp-action="Create" class="user_link px-2 font-weight-bold fs-5">
+                       
+                        
+                    </ul><a asp-controller="Carts" asp-action="Index" class="user_link px-2 font-weight-bold fs-5">
                         <i class="fa fa-cart-plus text-light" aria-hidden="true"></i>
                     </a>
                     <partial name="_LoginPartial" />
