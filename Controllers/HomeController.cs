@@ -2,7 +2,7 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using ZHotelMenuAndOrder.Models;
 
-namespace ZZHotelMenuAndOrder.Controllers
+namespace ZHotelMenuAndOrder.Controllers
 {
     public class HomeController : Controller
     {

@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using ZHotelMenuAndOrder.Data;
 using ZHotelMenuAndOrder.Models;
 
-namespace ZZHotelMenuAndOrder.Controllers
+namespace ZHotelMenuAndOrder.Controllers
 {
     public class ContactsController : Controller
     {
